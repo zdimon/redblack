@@ -260,5 +260,118 @@
         });
 
 
+###Pyramid
+
+
+
+
+                <div class="wrapperp">
+                    <div class="rowp row6">
+                        <div class="block"></div>
+                    </div>
+                    <div class="rowp row5">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="rowp row4">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="rowp row3">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="rowp row2">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                    <div class="rowp row1">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                </div>
+
+
+
+            <style>
+
+
+            .wrapperp {
+                box-sizing: border-box;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .wrapperp .rowp {
+                font-size: 0px;
+                text-align: center;
+            }
+
+            .wrapperp .rowp * {
+                font-size: 14px;
+            }
+
+            .wrapperp .block {
+                background-color: silver;
+                color: #fff;
+                text-align: center;
+                
+                display: inline-block;
+                height: 10px;
+                margin: 1%;
+                margin-bottom: 5px;
+                width: 13%;
+            }
+
+            .wrapperp .active{
+               background-color: green !important;
+            }
+
+            </style>
+
+
+*js*
+
+
+    
+        var lot_history = [];
+
+        .....
+
+        for(var i=1; i<7; i++)
+        {
+            $( ".row"+i ).children().removeClass( "active" );
+           
+        }
+
+        for(var i=1; i<lot_history.length+1; i++)
+        {
+            $( ".row"+i ).children().addClass( "active" );
+           
+        }
+
+        .....
+
+        if(color===rand){
+            bet = bet*2;
+            lot_history.push(1);
+        } else {
+            bet = 0;
+            lot_history = [];
+        }  
+
+
+
+
 
 

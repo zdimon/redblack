@@ -98,6 +98,7 @@ $('.make_bet').click(function(e){
 $('#take_back').click(function(e){
     account = parseInt(account) + parseInt(bet);
     bet = 0;
+    lot_history = [];
     refresh();
 });
 
