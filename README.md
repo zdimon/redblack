@@ -25,6 +25,11 @@ So if he bets 1 coin he wins ((((((((1*2)*2)*2)*2)*2)*2)*2)*2 = 256 coins.
 Also, the player has to be able to see the history of the previous attempts.
 
 
+
+![Black or Red](game.png "Screen")
+
+
+
 ##Tehnology
 
 Level 1
