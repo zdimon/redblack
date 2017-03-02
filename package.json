@@ -1,0 +1,28 @@
+{
+  "name": "redorblack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "python -m SimpleHTTPServer 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdimon/redblack.git"
+  },
+  "keywords": [
+    "game",
+    "js"
+  ],
+  "author": "zdimon77@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdimon/redblack/issues"
+  },
+  "homepage": "https://github.com/zdimon/redblack#readme"
+}
