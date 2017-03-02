@@ -3,6 +3,8 @@
 var username = 'none';
 var account = 0;
 var bet = 0;
+var game_history = [];
+var lot_history = [];
 
 ///////////////////////////
 
@@ -38,6 +40,25 @@ refresh = function(){
         $('.make_bet').show();   
         $('.guess').hide();
     }
+    l(lot_history);
+
+
+    for(var i=1; i<7; i++)
+    {
+        $( ".row"+i ).children().removeClass( "active" );
+       
+    }
+
+    for(var i=1; i<lot_history.length+1; i++)
+    {
+        $( ".row"+i ).children().addClass( "active" );
+       
+    }
+ 
+    $('#game_history').empty();
+    $.each(game_history,function(i,v){
+        $('#game_history').append('<div style="display:inline-block; margin: 5px; width: 20px; height: 20px; background: '+v+'"></div');
+    })
 
 };
 
@@ -85,11 +106,15 @@ $('#take_back').click(function(e){
 $('.guess').click(function(e){
 
     var color = $(e.target).attr('data-color');
-    if(color===random_color()){
+    var rand = random_color();
+    if(color===rand){
         bet = bet*2;
+        lot_history.push(1);
     } else {
         bet = 0;
+        lot_history = [];
     }    
+    game_history.push(rand)
     refresh();
 });
 

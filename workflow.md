@@ -230,6 +230,34 @@
     });
 
 
+###History
+
+    <div class="col-md-12 well" id="game_history"></div>
+
+
+    var game_history = [];
+
+     ....
+
+    refresh = function(){
+
+           ......
+
+        $('#game_history').empty();
+        $.each(game_history,function(i,v){
+            $('#game_history').append('<div style="display:inline-block; margin: 5px; width: 20px; height: 20px; background: '+v+'"></div');
+        })
+
+
+
+
+        ///Guessing
+        $('.guess').click(function(e){
+
+            ...
+            game_history.push(rand)
+            refresh();
+        });
 
 
 
