@@ -28,7 +28,7 @@ Also, the player has to be able to see the history of the previous attempts.
 
 ![Black or Red](game.png "Screen")
 
-
+  
 
 ##Tehnology
 
