@@ -55,6 +55,9 @@
     </html>  
 
 
+###Runing server 
+
+    python -m SimpleHTTPServer 8080
 
 
 ###Wellcome
