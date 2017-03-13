@@ -5,11 +5,18 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^2.1.0",
+    "gulp-watch": "^4.3.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jade": "^1.11.0"
+  },
   "scripts": {
-    "start": "python -m SimpleHTTPServer 8080"
+    "start": "python -m SimpleHTTPServer 8080",
+    "watch": "jade -w -o . src"
   },
   "repository": {
     "type": "git",
