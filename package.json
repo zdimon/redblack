@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "python -m SimpleHTTPServer 8080"
+    "start": "python -m SimpleHTTPServer 8080"
   },
   "repository": {
     "type": "git",
