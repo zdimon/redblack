@@ -3,16 +3,69 @@ html
     head
         meta(charset="utf-8")
         title= title
-        link(rel='stylesheet', href='/public/css/style.css')
+        link(rel='stylesheet', href='/public/css/style.min.css')
         link(rel='stylesheet', href='node_modules/bootstrap/dist/css/bootstrap.min.css')
         script(src='node_modules/jquery/dist/jquery.min.js')
+        script(src='node_modules/angular/angular.min.js')
         script(src='node_modules/bootstrap/dist/js/bootstrap.min.js')
-    body
+    body( ng-app='app' )
         nav(class="navbar navbar-inverse navbar-fixed-top")
             div.container
                 div.navbar-header
                     a(class="navbar-brand" href="#") Start
 
-        div(style="padding-top: 60px" class="container")
-            h1 Hello
+        div( ng-controller="appCtrl" style="padding-top: 60px" class="container")
+            h1 {{ message }}
+
+            div.col-md-4
+                div(class="well")
+                    div(class='form-group')
+                        input(class="form-control" id="input_name")
+                    div(class='form-group')
+                        button(class="btn btn-success") You name
+                div(class="well")
+                    h2 0 {{ account }} 
+                    button(class="btn btn-success") Add 100 coins
+
+
+            div.col-md-4
+                div.well
+                    h2 0{{ bet }}
+                    div.btn-group              
+                        button(class="btn btn-primary") Take back
+                        button(class="btn btn-danger") Red
+                        button(class="btn btn-default") Black  
+
+                div(class="well")   
+                    div.btn-group              
+                        button(class="btn btn-success" data-bet="{{ n }}" ng-repeat="n in [1,2,5,10,20,50]") {{ n }}
+                                     
+            
+            div.col-md-4
+                div.well
+
+                    div.wrapper
+                        div(class="row row1")
+                            div.block
+                        div(class="row row2")
+                            div(class="block" ng-repeat="n in [1,2]")
+                        div(class="row row3")
+                            div(class="block" ng-repeat="n in [1,2,3]")
+                        div(class="row row4")
+                            div(class="block" ng-repeat="n in [1,2,3,4]")
+                        div(class="row row5")
+                            div(class="block" ng-repeat="n in [1,2,3,4,5]")
+                        div(class="row row6")
+                            div(class="block" ng-repeat="n in [1,2,3,4,5,6]")
+                        div(class="row row7")
+                            div(class="block" ng-repeat="n in [1,2,3,4,5,6,7]")
+                        div(class="row row8")
+                            div(class="block" ng-repeat="n in [1,2,3,4,5,6,7,8]")
+
+            div.col-md-12
+                div.well
+                    h3 History
+                    
+
+        script(src='public/js/app.min.js') 
             
