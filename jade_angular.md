@@ -103,7 +103,7 @@ Template
             h3 History
 
 > 
-    ** Angular desigion **
+    __Angular desigion__
 
     button(class="btn btn-success" data-bet="{{ n }}" ng-repeat="n in [1,2,5,10,20,50]") {{ n }}
 
