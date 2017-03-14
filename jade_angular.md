@@ -102,8 +102,8 @@ Template
         div.well
             h3 History
 
-> 
-    __Angular desigion__
+
+**Angular desigion**
 
     button(class="btn btn-success" data-bet="{{ n }}" ng-repeat="n in [1,2,5,10,20,50]") {{ n }}
 
