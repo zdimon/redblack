@@ -1,6 +1,6 @@
-#Jade and Angular implementation.
+# Jade and Angular implementation.
 
-##Installation
+## Installation
 
 	npm install angular --save
 
@@ -20,7 +20,7 @@ Add script to the end of the page.
 
 	script(src='public/js/app.min.js')
 
-##Minifycation
+## Minifycation
 
 Install requirements.
 
@@ -107,14 +107,14 @@ Template
 
     button(class="btn btn-success" data-bet="{{ n }}" ng-repeat="n in [1,2,5,10,20,50]") {{ n }}
 
-##Minify css
+## Minify css
 
 Requirements
 
     npm install uglifycss --save
 
 
-####gulpfile.js
+#### gulpfile.js
 
     var uglifycss = require('uglifycss');
     var fs = require('fs');
@@ -134,7 +134,7 @@ Requirements
         gulp.watch('src/*.css', ['mincss']);
     });
 
-###style.css
+### style.css
 
     .wrapper .row {
         font-size: 0px;
@@ -152,7 +152,7 @@ Requirements
         width: 10%;
     }
 
-###Template
+### Template
 
                     div.wrapper
                         div(class="row row1")
