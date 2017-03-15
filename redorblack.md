@@ -17,6 +17,28 @@
 ### Install bootstrap
 
     npm install bootstrap --save
+    
+### Install minification tools
+
+    npm install gulp  --save-dev
+    npm install gulp-concat --save-dev
+    npm install gulp-uglify --save-dev
+   
+    
+###Example of gulpfile.js
+    
+    var concat = require('gulp-concat');
+    var gulp = require('gulp');
+    var uglify = require('gulp-uglify');
+
+
+    gulp.task('default', function() {
+      gulp.src(['./one.js', './two.js'])
+        .pipe(concat('all.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/'))
+    });
+        
 
 ##Basic page.
 
