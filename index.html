@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Red or Black</title>
+    <title>Красное-черное</title>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Red or Black</a>
+          <a class="navbar-brand" href="#">Онлайн казино. Игра красное-черное</a>
         </div>        
       </div>
     </nav>
@@ -64,27 +64,27 @@
     <div class="container" style="padding-top: 60px">
 
       <div class="starter-template">
-        <h1 id='welcome'>Enter your name</h1> <input type="text" id="name" /> <button id="save_name" class="btn btn-success" /> Save </button>
+        <h1 id='welcome'>Как вас зовут?</h1> <input type="text" id="name" /> <button id="save_name" class="btn btn-success" /> Сохранить </button>
       </div>
 
       <div class="row">
           <div class="col-md-4">
-                <h2> My account <span id="account"></span> </h2>
-                <button id="add_coins" class="btn btn-success" /> Add 100 coins </button>
-                <h3> Make a bet! </h3>
-                <button data-coins="1" class="btn btn-warning make_bet" /> 1 </button>
-                <button data-coins="2"  class="btn btn-warning make_bet" /> 2 </button>
-                <button data-coins="5"  class="btn btn-warning make_bet" /> 5 </button>
-                <button data-coins="10"  class="btn btn-warning make_bet" /> 10 </button>
+                <h2> На моем счету: <span id="account"></span> грн.</h2>
+                <button id="add_coins" class="btn btn-success" /> Добавить 100 грн. </button>
+                <h3> Делай ставку! </h3>
+                <button data-coins="1" class="btn btn-warning make_bet" /> 1 грн</button>
+                <button data-coins="2"  class="btn btn-warning make_bet" /> 2 грн</button>
+                <button data-coins="5"  class="btn btn-warning make_bet" /> 5 грн</button>
+                <button data-coins="10"  class="btn btn-warning make_bet" /> 10 грн</button>
           </div>
 
           <div class="col-md-5"> 
               <h3 id="bet" style="font-size: 140px"> </h3>
-              <button id="take_back" class="btn btn-primary" style="display: none" /> Take back </button>
+              <button id="take_back" class="btn btn-primary" style="display: none" /> Забрать бабки. </button>
 
 
-              <button data-color="red" class="btn btn-danger guess" style="display: none" /> Red </button>
-              <button data-color="black" class="btn btn-secondary guess" style="display: none" /> Black </button>
+              <button data-color="red" class="btn btn-danger guess" style="display: none" /> Красное </button>
+              <button data-color="black" class="btn btn-secondary guess" style="display: none" /> Черное </button>
   
           </div>
 

@@ -27,7 +27,7 @@ random_color = function(){
 refresh = function(){
 
     $('#account').html(account);
-    $("#welcome").html('Wellcome '+username); 
+    $("#welcome").html('Ну здравствуй '+username+'!'); 
     $('#account').html(account);
     $('#bet').html(bet);
 
